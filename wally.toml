@@ -1,0 +1,11 @@
+[package]
+name = "nottirb/fusionextensions"
+version = "0.0.1-beta"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Fusion = "nottirb/fusion-beta@0.1.3-beta"
+Spring = "brittonfischer/spring@0.1.0"
+Janitor = "howmanysmall/janitor@1.14.1"
+Oklab = "nottirb/oklab@1.0.0"

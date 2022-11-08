@@ -1,0 +1,23 @@
+{
+	"name": "TestFusionExtensions",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"Packages": {
+				"$path": "Packages",
+				"FusionExtensions": {
+					"$path": "src"
+				}
+			}
+		},
+
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"$path": "test/Client"
+			}
+		}
+	}
+}
