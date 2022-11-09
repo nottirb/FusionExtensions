@@ -1,6 +1,6 @@
 [package]
 name = "nottirb/fusionextensions"
-version = "0.0.1-beta"
+version = "0.0.2-beta"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 

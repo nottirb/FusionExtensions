@@ -4,7 +4,6 @@ local Stepped = if RunService:IsServer() then RunService.Heartbeat else RunServi
 
 local Package = script.Parent
 local Packages = Package.Parent
-local Index = Packages._Index
 
 local SpringUtils = require(script.SpringUtils)
 local Fusion = require(Packages.Fusion)
