@@ -71,9 +71,11 @@ return function (stateOrValue: any, speed: number, damper: number)
 		[Value(sourceState:get(false))] = true,
 	}, WEAK_KEYS_METATABLE)
 
+	local startingValue = sourceState:get(false)
 	local sharedJanitor = Janitor.new()
 	local reusedJanitor = Janitor.new()
-	local sharedSpring
+	local sharedSpring = if startingValue ~= nil then createSpring(sharedJanitor, SpringUtils.toLinearIfNeeded(startingValue)) else nil
+	startingValue = nil
 
 	sharedJanitor:Add(reusedJanitor, "Destroy")
 	sharedJanitor:Add(Observer(sourceState):onChange(function()

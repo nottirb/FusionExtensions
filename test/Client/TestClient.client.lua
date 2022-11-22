@@ -53,7 +53,7 @@ local App = New "ScreenGui" {
 }
 
 -- Test spring
-for i = 1, 10 do
+for i = 1, 100 do
 	task.wait(0.1)
 
 	-- Set size
